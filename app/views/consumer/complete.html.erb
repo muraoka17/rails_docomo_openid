@@ -1,0 +1,13 @@
+<html>
+<title>docomo id ログインテスト</title>
+<body>
+ログインに成功しました<br />
+<dl>
+<% @result.each do |k, v| %>
+<dt><%= k %></dt><dd><%= v %></dd>
+<% end %>
+</dl>
+<br />
+<%= link_to("戻る", :action => "index") %>
+</body>
+</html>

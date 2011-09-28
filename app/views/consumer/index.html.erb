@@ -1,0 +1,11 @@
+<html>
+<title>docomo id ログインテスト</title>
+<body>
+<h2>docomo openid ログイン</h2>
+<% form_tag(:action => "start") do %>
+<%= check_box_tag("guid") %>GUIDを取得する<br />
+<%= submit_tag("docomo id でログイン") %>
+<% end %>
+※GUIDを取得した場合も画面表示を行うだけで、サーバには保存しておりません
+</body>
+</html>
